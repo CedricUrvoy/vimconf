@@ -1,12 +1,15 @@
-# VIM CONF
+# VIM CONFIGURATION
 
 This vim configuration is a bundle of multiple vim conf with some adaptation.
 
-main source : [wincent](https://github.com/wincent/wincent)
+## Installation 
 
-## instalation 
+- Clone the repo to replace your .vim folder
+`git@github.com:CedricUrvoy/vimconf.git`
 
-Get the folder
-
-Create a symlinc for the .vimrc : 
+- Create a symlink for the .vimrc : 
 `ln -s ~/.vim/vimrc .vimrc`
+
+## Credits
+
+[awesome configuration : wincent](https://github.com/wincent/wincent)
