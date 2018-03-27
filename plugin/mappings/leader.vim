@@ -10,10 +10,6 @@ nnoremap <Leader>o :only<CR>
 " you have a lot of splits and the status line gets truncated).
 nnoremap <Leader>p :echo expand('%')<CR>
 
-" <Leader>r -- Cycle through relativenumber + number, number (only), and no
-" numbering (mnemonic: relative).
-nnoremap <silent> <Leader>r :call mappings#cycle_numbering()<CR>
-
 "fast writing 
 nnoremap <Leader>w :write<CR>
 
