@@ -33,6 +33,7 @@ Plugin 'scrooloose/nerdtree'
 " CONF
 map <leader>t :NERDTreeToggle <CR>
 map <leader>r :NERDTreeFind<cr>
+let g:NERDTreeMouseMode=2
 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
