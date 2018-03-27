@@ -22,9 +22,6 @@ Plugin 'tweekmonster/startuptime.vim'
 " Plugin YCM to autocomplete
 Plugin 'Valloric/YouCompleteMe'
 
-set completeopt-=preview
-let g:ycm_min_num_of_chars_for_completion = 3
-let g:ycm_min_num_identifier_candidate_chars = 3
 
 Plugin 'tpope/vim-surround'
 
@@ -78,10 +75,6 @@ Plugin 'moll/vim-node'
 
 " Snippets plugins
 Plugin 'SirVer/ultisnips'
-" Ultisnip conf.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 Plugin 'honza/vim-snippets'
 
 "Visual Plugin
