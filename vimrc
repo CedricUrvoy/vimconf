@@ -81,11 +81,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'powerline/powerline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" air-line conf
-let g:airline_powerline_fonts=1
-let g:airline_theme='nord'
-let g:airline_skip_empty_sections=1
-let g:airline_section_y=''
 
 " Themes
 Plugin 'arcticicestudio/nord-vim'
