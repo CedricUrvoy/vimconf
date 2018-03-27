@@ -4,9 +4,8 @@
 let mapleader= "\<Space>"
 let g:mapleader= "\<Space>"
 
-filetype indent plugin on
-syntax on
 set nocompatible
+filetype off
 
 "
 " PLUGINS
@@ -22,6 +21,10 @@ Plugin 'tweekmonster/startuptime.vim'
 
 " Plugin YCM to autocomplete
 Plugin 'Valloric/YouCompleteMe'
+
+set completeopt-=preview
+let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_min_num_identifier_candidate_chars = 3
 
 Plugin 'tpope/vim-surround'
 
@@ -45,6 +48,7 @@ Plugin 'davidoc/taskpaper.vim'
 " Autosave taskpaper files
 autocmd filetype taskpaper let g:auto_save = 1
 autocmd filetype taskpaper :WatchForChanges!
+let g:task_paper_date_format = "%Y-%m-%d %H:%M"
 
 if has('conceal')
   Plugin 'Yggdroot/indentLine'
@@ -84,8 +88,10 @@ Plugin 'powerline/powerline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " air-line conf
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'nord'
+let g:airline_powerline_fonts=1
+let g:airline_theme='nord'
+let g:airline_skip_empty_sections=1
+let g:airline_section_y=''
 
 " Themes
 Plugin 'arcticicestudio/nord-vim'
@@ -167,3 +173,7 @@ command! -bang -nargs=* Rg
       \   <bang>0 ? fzf#vim#with_preview('up:60%')
       \           : fzf#vim#with_preview('right:50%:hidden', '?'),
       \   <bang>0)
+
+
+filetype indent plugin on
+syntax on
