@@ -38,15 +38,12 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'sheerun/vim-polyglot'
 
-" Plugin for auto-save
-Plugin 'vim-scripts/vim-auto-save'
 Plugin 'djoshea/vim-autoread'
 
 Plugin 'davidoc/taskpaper.vim'
-" Autosave taskpaper files
-autocmd filetype taskpaper let g:auto_save = 1
 autocmd filetype taskpaper :WatchForChanges!
 let g:task_paper_date_format = "%Y-%m-%d %H:%M"
+au BufRead,BufNewFile *.taskpaper setlocal textwidth=80
 
 if has('conceal')
   Plugin 'Yggdroot/indentLine'
