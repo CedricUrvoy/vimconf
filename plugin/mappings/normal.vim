@@ -5,6 +5,9 @@
 " Toggle fold at current position.
 nnoremap <Tab> za
 
+"Clear highligh after a search
+"nnoremap <esc> :noh<return><esc>
+
 " Repeat last macro if in a normal buffer.
 nnoremap <expr> <CR> empty(&buftype) ? '@@' : '<CR>'
 

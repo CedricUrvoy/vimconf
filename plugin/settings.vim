@@ -12,6 +12,11 @@ set lazyredraw "don't update screen during macro
 set hidden " Allow to change file even if the current file isn't written
 set mouse=a "Allow mouse for all modes
 
+"if exists('+extra_search')
+  set incsearch
+  set hlsearch
+"endif
+
 "Clipboard
 set clipboard=unnamed
 if $TMUX == ''
